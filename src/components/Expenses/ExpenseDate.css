@@ -1,0 +1,13 @@
+.expense-item__date--year {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.expense-item__date--month {
+  font-size: 1.2rem;
+}
+
+.expense-item__date--day {
+  font-size: 1.6rem;
+  font-weight: bold;
+}

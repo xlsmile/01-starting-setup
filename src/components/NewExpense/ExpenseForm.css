@@ -1,0 +1,35 @@
+.new-expense__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.new-expense__controls {
+  display: flex;
+  column-gap: 1.6em;
+  justify-content: space-between;
+}
+
+.new-expense__control {
+  flex: 1 0 auto;
+}
+
+.new-expense__control label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+}
+
+.new-expense__control input {
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+.new-expense__actions {
+  text-align: right;
+  font-weight: bold;
+}
