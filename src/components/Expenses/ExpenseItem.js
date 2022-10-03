@@ -1,23 +1,17 @@
-import React, {useState} from 'react';
-import ExpenseDate from './ExpenseDate';
+import React from 'react';
 import Card from '../UI/Card';
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
-const ExpenseItem = ({ title, amount, timepoint }) => {
-  const [updatedTitle, setUpdatedTitle] = useState(title);
-
-  const handleClick = () => {
-    setUpdatedTitle('Updated Title');
-  }
+const ExpenseItem = ({ timepoint, title, amount }) => {
 
   return (
     <Card className="expense-item">
       <div className="expense-item__date">
-        <ExpenseDate expensedate={timepoint} />
+        <ExpenseDate purchasedate={timepoint} />
       </div>
-      <h2 className="expense-item__title">{updatedTitle}</h2>
-      <div className="expense-item__amount">{amount}</div>
-      <button className="expense-item__cta" onClick={handleClick}>Update Title</button>
+      <h2 className="expense-item__title">{title}</h2>
+      <div className="expense-item__amount">${amount}</div>
     </Card>
   );
 }

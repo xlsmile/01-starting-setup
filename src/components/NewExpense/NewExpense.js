@@ -5,7 +5,7 @@ const NewExpense = ({ getNewExpenseInApp }) => {
   const handleSubmittedData = (submittedData) => {
     const enteredData = {
       ...submittedData,
-      id: Math.random().toString()
+      id: (Math.random() * 100).toString()
     };
     getNewExpenseInApp(enteredData);
   }

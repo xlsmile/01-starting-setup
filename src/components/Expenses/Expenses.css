@@ -1,3 +1,17 @@
 .expenses {
   box-shadow: none;
 }
+
+.expenses__empty {
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  position: relative;
+}
+
+.expenses__empty::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0.4em;
+  background-color: #b90082;
+}
